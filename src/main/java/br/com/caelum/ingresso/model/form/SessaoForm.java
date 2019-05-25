@@ -16,14 +16,12 @@ public class SessaoForm {
 	
 	@NotNull
 	private Integer salaId;
-	@DateTimeFormat
+	@DateTimeFormat(pattern = "HH:mm")
 	@NotNull
 	private LocalTime horario;
 	@NotNull
 	private Integer filmeId;
-	
-	
-	
+			
 	public Integer getSalaId() {
 		return salaId;
 	}

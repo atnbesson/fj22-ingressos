@@ -20,7 +20,7 @@ public class SessaoDao {
 	}
 
 	public List<Sessao> buscaSessaoDaSala(Sala sala) {
-		return manager.createQuery("select s from sessao s where s.sala = :sala", Sessao.class)
+		return manager.createQuery("select s from Sessao s where s.sala = :sala", Sessao.class)
 				.setParameter("sala", sala).getResultList();
 	}
 }
